@@ -21,9 +21,9 @@ gem 'sqlite3', group: :sqlite
 
 gem 'figaro'
 
-group :production do
-  gem 'rails_12factor'
-end
+# group :production do
+#   gem 'rails_12factor'
+# end
 
 group :development do
   gem 'letter_opener'
