@@ -21,6 +21,8 @@ gem 'sqlite3', group: :sqlite
 
 gem 'figaro'
 
+gem 'capistrano'
+
 # group :production do
 #   gem 'rails_12factor'
 # end
