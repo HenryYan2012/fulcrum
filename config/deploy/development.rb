@@ -1,3 +1,5 @@
+
+set :branch, 'cap_setup'
 # server-based syntax
 # ======================
 # Defines a single server with a list of roles and multiple properties.
@@ -49,13 +51,14 @@
 #
 # The server-based syntax can be used to override options:
 # ------------------------------------
-# server 'example.com',
-#   user: 'user_name',
-#   roles: %w{web app},
-#   ssh_options: {
-#     user: 'user_name', # overrides user setting above
-#     keys: %w(/home/user_name/.ssh/id_rsa),
-#     forward_agent: false,
-#     auth_methods: %w(publickey password)
-#     # password: 'please use keys'
-#   }
+server '170.10.10.142',
+  user: 'pharmmd',
+  roles: %w{web app},
+  ssh_options: {
+    user: 'pharmmd', # overrides user setting above
+    keys: %w(/home/user_name/.ssh/id_rsa),
+    forward_agent: false,
+    auth_methods: %w(publickey)
+    # password: 'please use keys'
+  }
+
